@@ -1,0 +1,34 @@
+
+	<div id="detail-box">
+		<div class="title">
+			<h2>{{country.countryName}}</h2>
+			<div id="image-box">
+				<div id="map-box">
+                    <img id="map-img" class="col-md-6" ng-src="http://www.geonames.org/img/country/250/{{map}}.png" />
+                </div>
+                <div id="flag-box">
+                    <img id="flag-img"class="col-md-6" ng-src="http://www.geonames.org/flags/x/{{flag}}.gif" />
+                </div>
+        	</div>
+        	<div class="country-info">
+        		<div class="info" class="col-md-4"><strong>Capital of {{country.countryName}}:</strong></div>
+        		<div>{{country.capital}}</div>
+        		<div class="info"class="col-md-4"><strong>Population of {{country.countryName}}:</strong></div>
+        		<div>{{country.population|number}}</div>
+        		<div class="info"class="col-md-4"><strong>Area of {{country.countryName}}:</strong></div>
+        		<div>{{country.areaInSqKm|number}}(km<sup>2</sup>)</div>
+
+        		<div class="info"class="col-md-4"><strong>Continent:</strong>
+        		<div>{{country.continentName}}</div>
+        		</div>
+        		<div class="info" class="col-md-4"><strong>Neighbours:</strong>
+        		<div>{{country.neighbour}}</div>
+        		</div>
+        		<div class="info" class="col-md-4"><strong>Population of Capital:</strong>
+        		<div>{{capitalPopulation|number}}</div>
+        		</div>
+        	</div>
+		</div>
+		<a href="#/home"><div class="button">Home <i class="fa fa-arrow-left"></i></div></a>
+		<a href="#/countries"><div class="button">Back to countries <i class="fa fa-arrow-left"></i></div></a>
+	</div>
